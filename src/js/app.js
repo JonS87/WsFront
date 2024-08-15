@@ -1,5 +1,5 @@
 // TODO: write code here
-const url = "//localhost:7070/";
+const url = "//wsback.onrender.com/"; // "//localhost:7070/";
 
 // const eventSource = new EventSource("http:" + url + "sse");
 
@@ -26,7 +26,7 @@ const url = "//localhost:7070/";
 //   console.log("see message");
 // });
 
-const ws = new WebSocket("ws:" + url + "ws");
+const ws = new WebSocket("wss:" + url + "ws");
 
 const subscribe = document.querySelector(".subscribe");
 const chatBlock = document.querySelector(".chat-block");
